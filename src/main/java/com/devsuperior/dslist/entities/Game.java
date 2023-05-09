@@ -19,7 +19,11 @@ public class Game {
     private String platforms;
     private Double score;
     private String imgUrl;
+
+    @Column(columnDefinition = "TEXT")//forçando os campos a serem tipo texto no BD//
     private String shortDescription;
+
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Game(){
